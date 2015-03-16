@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - The HTML Presentation Framework</title>
+
+    <meta name="description" content="A quick-start for Hakim El Hattab's excellent reveal.js">
+    <meta name="author" content="Jim Sangwine">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../bower_components/reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="../bower_components/reveal.js/css/theme/sky.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../bower_components/reveal.js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="../bower_components/reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+
+            <!-- ### A Markdown Section ### -->
+
+            <section data-markdown><script type="text/template">
+                ## AngularJS...
+                #### what's the point?
+                ![Angular!](resources/angular-logo.png)
+            </script></section>
+
+            <!-- ### The bad old days (pre-css) ### -->
+
+            <section data-markdown><script type="text/template">
+                ## The Bad Old Days
+                #### (pre CSS)
+                <pre><code data-trim contenteditable>
+                <table border="0" cellspacing="0" cellpadding="0" width="284">
+                    <tr>
+                        <td>
+                            <img border="0" src="../images/left_corner.jpg">
+                        </td>
+                        <td>
+                            <img border="0" src="../images/middle.jpg">
+                        </td>
+                        <td>
+                            <img border="0" src="../images/right_corner.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td nowrap height="480" align="center" valign="top" bgcolor="#333333" colspan="3">
+                            <b><font face="Arial" color="#FF0000" size="2">Argh! The tables!<br></font></b>
+                        </td>
+                    </tr>
+                </table>
+                </code></pre>
+            </script></section>
+
+            <!-- ### PHP display logic ### -->
+
+            <section data-markdown><script type="text/template">
+                ## PHP "spaghetti code" Display Logic
+                <pre><code data-trim contenteditable>
+                <?php if(!empty($foo)): ?>
+                    <?php foreach($foo as $bar): ?>
+                        <a href="<?=$bar['zig']?>"><?=$bar['zag']?></a>
+                        <a href="<?=$bar['zig2']?>"><?=$bar['zag2']?></a>
+                        <a href="<?=$bar['zig3']?>"><?=$bar['zag3']?></a>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    There were no rows found.
+                <?php endif; ?>
+                </code></pre>
+            </script></section>
+
+            <!-- ### Smarty template display logic ### -->
+
+            <section data-markdown><script type="text/template">
+                ## Server-side template engines
+                <pre><code data-trim contenteditable>
+                {foreach $foo as $bar}
+                    <a href="{$bar.zig}">{$bar.zag}</a>
+                    <a href="{$bar.zig2}">{$bar.zag2}</a>
+                    <a href="{$bar.zig3}">{$bar.zag3}</a>
+                {foreachelse}
+                    There were no rows found.
+                {/foreach}
+                </code></pre>
+            </script></section>
+
+            <!-- ### N-Tier Applications ### -->
+
+            <section data-markdown><script type="text/template">
+                ## N-Tier Applications
+                ![N-Tier architecture!](resources/n-tier-architecture-diagram.jpg)
+            </script></section>
+
+            <!-- ### Server-side MVC ### -->
+
+            <section data-markdown><script type="text/template">
+                ## Server-side MVC
+                ![Server-side MVC!](resources/mvc-server.png)
+            </script></section>
+
+            <!-- ### Request-Response Model ### -->
+
+            <section data-markdown><script type="text/template">
+                ## Request-Response Model
+                ![request response!](resources/request-response.png)
+            </script></section>
+
+            <!-- ### AJAX applications ### -->
+
+            <section data-markdown><script type="text/template">
+                ## AJAX applications
+                ![AJAX applications!](resources/ajax-application.png)
+            </script></section>
+
+            <!-- ### Client side MVC ### -->
+
+            <section data-markdown><script type="text/template">
+                ## Client side MVC
+                ![Client side MVC!](resources/mvc-client.png)
+            </script></section>
+
+            <!-- ### MVVM ### -->
+
+            <section data-markdown><script type="text/template">
+                ## Model View - View Model (MVVM)
+                ![MVVM!](resources/mvvm.png)
+            </script></section>
+
+            <!-- ### AngularJS Architecture ### -->
+
+            <section data-markdown><script type="text/template">
+                ### AngularJS Architecture
+                ![AngularJS Architecture!](resources/angular-architecture.jpg)
+            </script></section>
+
+            <!-- ### Modules ### -->
+
+            <section data-markdown><script type="text/template">
+                ### Modules
+                ![Modules!](resources/angular-architecture-2.png)
+            </script></section>
+
+            <!-- ### Routes ### -->
+
+            <section data-markdown><script type="text/template">
+                ### Routes
+                ![Routes!](resources/angular-architecture-3.png)
+            </script></section>
+
+            <!-- ### Views ### -->
+
+            <section data-markdown><script type="text/template">
+                ### Views
+                ![Views!](resources/angular-architecture-4.png)
+            </script></section>
+
+            <!-- ### Controllers ### -->
+
+            <section data-markdown><script type="text/template">
+                ### Controllers
+                ![Controllers!](resources/angular-architecture-5.png)
+            </script></section>
+
+            <!-- ### $scope ### -->
+
+            <section data-markdown><script type="text/template">
+                ### $scope
+                ![$scope!](resources/angular-architecture-6.png)
+            </script></section>
+
+            <!-- ### Directives ### -->
+
+            <section data-markdown><script type="text/template">
+                ### Directives
+                ![Directives!](resources/angular-architecture-7.png)
+            </script></section>
+
+            <!-- ### Services ### -->
+
+            <section data-markdown><script type="text/template">
+                ### Services
+                ![Services!](resources/angular-architecture-8.png)
+            </script></section>
+
+            <!-- ### The end ### -->
+
+            <section data-markdown><script type="text/template">
+                ### The end : )
+            </script></section>
+        </div>
+    </div>
+    <script src="../bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script src="../bower_components/reveal.js/js/reveal.min.js"></script>
+
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: '../bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: '../bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: '../bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                { src: '../bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
